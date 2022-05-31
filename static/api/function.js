@@ -17,7 +17,7 @@ function BingPapers(callback) {
 function getMarkdownFileNameList(callback) {
     ajax(
         {
-            url: '/json/markdownFileName.json',
+            url: '../../json/markdownFileName.json',
         },
         res => {
             callback(res);
@@ -29,7 +29,7 @@ function getMarkdownFileNameList(callback) {
 function getPieceThoughtsContent(fileName = null, callback) {
     ajax(
         {
-            url: `/markdown/pieceThoughts/${fileName}`,
+            url: `../../markdown/pieceThoughts/${fileName}`,
         },
         res => {
             if (fileName) {
@@ -44,7 +44,7 @@ function getPieceThoughtsContent(fileName = null, callback) {
 function getArticleContent(fileName = null, callback) {
     ajax(
         {
-            url: `/markdown/articles/${fileName}`,
+            url: `../../markdown/articles/${fileName}`,
         },
         res => {
             if (fileName) {
