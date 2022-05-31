@@ -7,8 +7,8 @@
         <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
         <title>问候</title>
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="/static/css/typer.css" />
-        <link rel="stylesheet" href="/static/css/common.css" />
+        <link rel="stylesheet" href="../../static/css/typer.css" />
+        <link rel="stylesheet" href="../../static/css/common.css" />
         <style>
             .lu_word_title {
                 line-height: 2em;
@@ -27,19 +27,15 @@
             <span id="typer" class="en_us_b"></span>
         </div>
     </body>
-    <script src="/plugin/jQuery/jquery.js"></script>
+    <script src="../../plugin/jQuery/jquery.js"></script>
     <script>
         $(function () {
-            $.getScript('/plugin/word.js', function (script, textStatus, jqXHR) {
+            $.getScript('../../plugin/word.js', function (script, textStatus, jqXHR) {
                 if (textStatus == 'success') {
                     // 打字机
                     var typer = $('#typer');
                     typer.lu_word({
-                        text: [
-                            "I'm a Developer.",
-                            "Maybe I'm a Half Photographer...",
-                            'Glad to See You!',
-                        ], //文本
+                        text: ["I'm a Developer.", "Maybe I'm a Half Photographer...", 'Glad to See You!'], //文本
                         color: '#26292e', //字体和光标颜色
                         speed: 200, //打字速度
                         sleep: 2000, //回退停顿时间
