@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <!-- 站点 ICON -->
+        <link rel="shortcut icon" href="/static/icon/title.svg" type="image/x-icon" />
+        <!-- 首页主要CSS -->
+        <link rel="stylesheet" href="/static/css/index.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="/plugin/Bootstrap/css/bootstrap.css" />
+        <!-- Swiper -->
+        <link rel="stylesheet" href="/plugin/Swiper/swiper-bundle.css" />
+        <!-- 公共类 -->
+        <link rel="stylesheet" href="/static/css/common.css" />
+        <title>欢迎访问</title>
+
+        <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+        <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+        <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="width: 100vw">
+            <div class="container">
+                <div class="navbar-header">
+                    <button
+                        type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#navbar"
+                        aria-expanded="false"
+                        aria-controls="navbar"
+                    >
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <span id="Avatar">
+                            <img src="/static/img/avatar.jpg" alt="头像" />
+                        </span>
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#home">主页</a></li>
+                        <li><a href="#article">文章</a></li>
+                        <li><a href="#album">相册</a></li>
+                        <li><a href="#footPrint">我的足迹</a></li>
+                        <li><a href="#workshow">项目展示</a></li>
+                        <li><a href="#about">声明</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" showTime></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main data-spy="scroll" data-target="#navbar">
+            <div class="container">
+                <div id="home">
+                    <iframe id="greetings" src="/views/typer/index.html" scrolling="no" width="100%" height="240" frameborder="none"></iframe>
+                    <h2>
+                        今日Bing
+                        <small>最近的Bing美图</small>
+                    </h2>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" bgdata></div>
+                            <div class="swiper-slide" bgdata></div>
+                            <div class="swiper-slide" bgdata></div>
+                            <div class="swiper-slide" bgdata></div>
+                            <div class="swiper-slide" bgdata></div>
+                            <div class="swiper-slide" bgdata></div>
+                            <div class="swiper-slide" bgdata></div>
+                            <div class="swiper-slide" bgdata></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div id="article">
+                    <h2>
+                        文章
+                        <small>技术总结和随笔</small>
+                    </h2>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a
+                                href="#suisuinian"
+                                id="pieceThoughts"
+                                role="tab"
+                                data-toggle="tab"
+                                aria-controls="program"
+                                aria-expanded="true"
+                                one-link-mark="yes"
+                            >
+                                碎碎念
+                            </a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="#story" id="story-tab" role="tab" data-toggle="tab" aria-controls="story" aria-expanded="true" one-link-mark="yes">随笔</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active in" id="suisuinian" aria-labelledby="pieceThoughts">
+                            <h4>细语闲谈</h4>
+                            <iframe src="/views/article/notes.html" scrolling="no" width="100%" height="640" frameborder="none"></iframe>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="story" aria-labelledby="story-tab">
+                            <h4>我的故事</h4>
+                            <iframe src="/views/article/article.html" scrolling="no" width="100%" height="640" frameborder="none"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div id="album">
+                    <h2>
+                        相册
+                        <small>记录时光</small>
+                    </h2>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#tibet" id="tibet-tab" role="tab" data-toggle="tab" aria-controls="tibet" aria-expanded="true" one-link-mark="yes">
+                                Tibet
+                            </a>
+                        </li>
+                        <li role="presentation" class>
+                            <a href="#qinLing" id="qinLing-tab" role="tab" data-toggle="tab" aria-controls="qinLing" aria-expanded="true" one-link-mark="yes">
+                                秦岭
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active in" id="tibet" aria-labelledby="tibet-tab">
+                            <div>
+                                <h4>2019 1001 西藏</h4>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="thumbnail">
+                                            <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/Putala.jpg" alt="西藏行" />
+                                            <div class="caption">
+                                                <h3>西藏行</h3>
+                                                <p>2019/10</p>
+                                                <p>
+                                                    <a href="#" class="btn btn-primary" role="button">敬请期待</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="qinLing" aria-labelledby="qinLing-tab">
+                            <div>
+                                <h4>2021 0307 秦岭</h4>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="thumbnail">
+                                            <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/sun_Set.jpg" alt="..." />
+                                            <div class="caption">
+                                                <h3>东秦岭 - 草链岭</h3>
+                                                <p>2021/03</p>
+                                                <p>
+                                                    <a href="#" class="btn btn-primary" role="button">敬请期待</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footPrint">
+                    <h2>
+                        足迹
+                        <small>记录去过的地方</small>
+                    </h2>
+                    <iframe id="openlayers" src="/views/footPrint/index.html" scrolling="no" width="100%" height="580" frameborder="none"></iframe>
+                </div>
+                <div id="workshow">
+                    <h2>
+                        项目展示
+                        <small>项目展示</small>
+                    </h2>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/mhwx0jl.jpg" />
+                                <div class="caption">
+                                    <h3>临夏州 民呼我行临距离</h3>
+                                    <p>项目分类：uni-app</p>
+                                    <p>账号主体：临夏市委组织部，该项目包含微信小程序，户外广告机App，微信搜索“民呼我行‘临’距离”</p>
+                                    <p>
+                                        <a href="javascript:void()" class="btn btn-primary disabled" role="button">去看看</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/tianYiYunTu.jpg" />
+                                <div class="caption">
+                                    <h3>天翼云图</h3>
+                                    <p>项目分类：微信小程序</p>
+                                    <p>账号主体：中国电信全渠道运营中心兰州片区各大型综合商场优惠券领取小程序</p>
+                                    <p>
+                                        <a href="javascript:void()" class="btn btn-primary disabled" role="button">去看看</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/HangHongHui.png" />
+                                <div class="caption">
+                                    <h3>杭红荟</h3>
+                                    <p>项目分类：公众号网页</p>
+                                    <p>账号主体：杭州市红十字会。杭州红会会员之家，该项目是一个微信公众号项目可关注微信公众号 “杭红荟”</p>
+                                    <p>
+                                        <a href="https://www.redcross668.com/" class="btn btn-primary" role="button">去看看</a>
+                                        （移动设备体验更佳）
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerBg">
+                <div class="container" id="about">
+                    <h2>
+                        声明
+                        <small>有关于博客内容创作的申明</small>
+                    </h2>
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-8 col-md-8">
+                            <p>所有博客内容，包括技术总结、摄影相册等，均系博主原创，谢绝抄袭，如需转载，请注明出处。</p>
+                            <p>
+                                &copy;
+                                <a href="mailto:820877998@qq.com">Coder-jin</a>
+                                &emsp; All Right Reserved 2021
+                            </p>
+                        </div>
+                        <div class="col-sm-2 col-md-2">
+                            <ul>
+                                <li>
+                                    <a href="http://jquery.com" target="_blank" rel="noopener noreferrer">JQuery</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.bootcss.com/" target="_blank" rel="noopener noreferrer">Bootstrap</a>
+                                </li>
+                                <li>
+                                    <a href="http://https://swiper.com.cn/" target="_blank" rel="noopener noreferrer">Swiper</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 col-md-2">
+                            <ul>
+                                <li>
+                                    <a href="https://picgo.github.io/PicGo-Doc/zh/" target="_blank" rel="noopener noreferrer">PicGo</a>
+                                </li>
+                                <li>
+                                    <a href="http://openlayers.chinadoc.org/" target="_blank" rel="noopener noreferrer">OpenLayers</a>
+                                </li>
+                                <li>
+                                    <a href="https://cn.bing.com/" target="_blank" rel="noopener noreferrer">Microsoft Bing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="/plugin/jQuery/jquery.js"></script>
+    <script src="/plugin/Swiper/swiper-bundle.js"></script>
+    <script src="/plugin/word.js"></script>
+    <script src="/plugin/Bootstrap/js/bootstrap.js"></script>
+    <script src="/static/api/jQuery-Ajax.js"></script>
+    <script src="/static/api/function.js"></script>
+    <script>
+        $(document).ready(function () {
+            const date = new Date();
+
+            timeDom = $('[showTime]').text(`${date.getFullYear()} / ${date.getMonth() + 1} / ${date.getDate()} 周${'日一二三四五六'.charAt(date.getDay())}`);
+            // Swiper
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                autoplay: true,
+                mousewheel: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '"></span>';
+                    },
+                    // 回调函数TODO:
+                },
+            });
+            // Bing wallpaper
+            BingPapers(res => {
+                let imagesList = res.images;
+                $('[bgdata]').each(function (index, element) {
+                    // element == this
+                    $(this).css({ backgroundImage: 'url(' + imagesList[index].url + ')' });
+                });
+            });
+        });
+    </script>
+</html>

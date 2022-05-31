@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+//定义变量
+@fontColor: #efefef;
+@githubColor: #26292e;
+@FontSize: 12px;
+@articleBg: #f9f9f933;
+@themeColor: #18dcff;
+
+//字体引用
+
+@import url('../css/plugin/fontawesome/css/fontawesome-all.min.css');
+
+@font-face {
+    font-family: 'en_us';
+    src: url('../font/FiraCode-Regular.ttf');
+}
+@font-face {
+    font-family: 'en_us_b';
+    src: url('../font/FiraCode-Bold.ttf');
+}
+@font-face {
+    font-family: 'zn_ch';
+    src: url('../font/PingFang-Regular.ttf');
+}
+@font-face {
+    font-family: 'zn_ch_b';
+    src: url('../font/PingFang-Bold.ttf');
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    position: relative;
+}
+
+.en_us_b {
+    font-family: 'en_us_b' !important;
+}
+
+.en_us {
+    font-family: 'en_us' !important;
+}
+
+.zn_ch_b {
+    font-family: 'zn_ch_b' !important;
+}
+
+.zn_ch {
+    font-family: 'zn_ch' !important;
+}
+
+.fontLarge {
+    font-size: 6 * @FontSize;
+    color: @fontColor;
+}
+
+.fontColor {
+    color: @fontColor;
+}
+
+.bolderTitle {
+    font-weight: bold !important;
+    margin: 0;
+}
+
+/* 渐变背景
+*********************************************/
+
+/* Basic */
+
+a {
+    -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+    text-decoration: none;
+}
+
+/* Icon */
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+.icon.brands:before {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+div[bgdata] {
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-color: @articleBg;
+}
+
+.nav > li {
+    position: relative;
+    display: block;
+}

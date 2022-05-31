@@ -1,0 +1,30 @@
+[![fork](https://gitee.com/Coder-jin/Coder-jin/badge/fork.svg?theme=white)](https://gitee.com/Dell-XPS/Blog/members)
+
+### 项目介绍
+
+-   参加工作也有一年时间了，给自己做个个人站点。也算是给自己一个奖励吧~~~🤞
+
+### 项目功能
+
+-   使用 Bootstrape，支持多设备类型访问
+
+-   纯前端，集成相册，文章，markdown 预览
+
+-   使用 PicGo 图床工具，远程存储图片文件，（后期存储需求较大时，可考虑使用阿里云 OSS 对象存储）
+
+-   使用 openLayers 展示我的足迹，（后续更新）
+
+-   暂无后台管理系统，暂无文章评论，点赞功能，（并不打算做，点赞评论的功能）
+
+目前各个功能块在逐步编码中，暂不完善。
+
+### 技术栈
+
+| 插件       | 版本       |
+| ---------- | ---------- |
+| jQuery     | _v 1.12.4_ |
+| Bootstrap  | _v 3.3.7_  |
+| Swiper     | _v 6.3.5_  |
+| Vuejs      | _v 2_      |
+| Markdjs    | _v 2.0.7_  |
+| OpenLayers | _v 5_      |

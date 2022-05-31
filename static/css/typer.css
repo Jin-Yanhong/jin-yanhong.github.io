@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.contect {
+  text-align: center;
+  height: 100%;
+  background: transparent;
+}
+.contect .bolderTitle {
+  width: 100%;
+  padding-top: 30px;
+}
+.contect .bolderTitle b {
+  color: #26292e;
+  margin: auto;
+  font-size: 84px;
+}
+.contect #typer {
+  padding: 10px 20px;
+  margin-top: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid transparent;
+  font-size: 24px !important;
+}
