@@ -87,7 +87,7 @@
                 <div id="article">
                     <h2>
                         文章
-                        <small>技术总结和随笔</small>
+                        <small>随笔杂谈</small>
                     </h2>
                     <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="active">
@@ -142,7 +142,7 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-md-4">
                                         <div class="thumbnail">
-                                            <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/Putala.jpg" alt="西藏行" />
+                                            <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/Photos/Putala.jpg" alt="西藏行" />
                                             <div class="caption">
                                                 <h3>西藏行</h3>
                                                 <p>2019/10</p>
@@ -161,7 +161,7 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-md-4">
                                         <div class="thumbnail">
-                                            <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/sun_Set.jpg" alt="..." />
+                                            <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/Photos/sun_Set.jpg" alt="..." />
                                             <div class="caption">
                                                 <h3>东秦岭 - 草链岭</h3>
                                                 <p>2021/03</p>
@@ -191,7 +191,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/mhwx0jl.jpg" />
+                                <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/Project/mhwx0jl.jpg" />
                                 <div class="caption">
                                     <h3>临夏州 民呼我行临距离</h3>
                                     <p>项目分类：uni-app</p>
@@ -204,7 +204,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/tianYiYunTu.jpg" />
+                                <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/Project/tianYiYunTu.jpg" />
                                 <div class="caption">
                                     <h3>天翼云图</h3>
                                     <p>项目分类：微信小程序</p>
@@ -217,11 +217,11 @@
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/HangHongHui.png" />
+                                <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/Project/HangHongHui.png" />
                                 <div class="caption">
                                     <h3>杭红荟</h3>
                                     <p>项目分类：公众号网页</p>
-                                    <p>账号主体：杭州市红十字会。杭州红会会员之家，该项目是一个微信公众号项目可关注微信公众号 “杭红荟”</p>
+                                    <p>账号主体：杭州市红十字会。该项目是一个微信公众号项目可关注微信公众号 “杭红荟”</p>
                                     <p>
                                         <a href="https://www.redcross668.com/" class="btn btn-primary" role="button">去看看</a>
                                         （移动设备体验更佳）
@@ -291,6 +291,7 @@
             const date = new Date();
 
             timeDom = $('[showTime]').text(`${date.getFullYear()} / ${date.getMonth() + 1} / ${date.getDate()} 周${'日一二三四五六'.charAt(date.getDay())}`);
+
             // Swiper
             var swiper = new Swiper('.swiper-container', {
                 slidesPerView: 1,
@@ -303,17 +304,16 @@
                     renderBullet: function (index, className) {
                         return '<span class="' + className + '"></span>';
                     },
-                    // 回调函数TODO:
                 },
             });
             // Bing wallpaper
-            BingPapers(res => {
-                let imagesList = res.images;
-                $('[bgdata]').each(function (index, element) {
-                    // element == this
-                    $(this).css({ backgroundImage: 'url(' + imagesList[index].url + ')' });
-                });
-            });
+            // BingPapers(res => {
+            //     let imagesList = res.images;
+            //     $('[bgdata]').each(function (index, element) {
+            //         // element == this
+            //         $(this).css({ backgroundImage: 'url(' + imagesList[index].url + ')' });
+            //     });
+            // });
         });
     </script>
 </html>
