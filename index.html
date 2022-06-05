@@ -307,13 +307,13 @@
                 },
             });
             // Bing wallpaper
-            // BingPapers(res => {
-            //     let imagesList = res.images;
-            //     $('[bgdata]').each(function (index, element) {
-            //         // element == this
-            //         $(this).css({ backgroundImage: 'url(' + imagesList[index].url + ')' });
-            //     });
-            // });
+            BingPapers(res => {
+                let imagesList = res.images;
+                $('[bgdata]').each(function (index, element) {
+                    // element == this
+                    $(this).css({ backgroundImage: 'url(' + imagesList[index].url + ')' });
+                });
+            });
         });
     </script>
 </html>
