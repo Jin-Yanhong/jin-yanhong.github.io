@@ -1,5 +1,3 @@
-[![fork](https://gitee.com/Coder-jin/Coder-jin/badge/fork.svg?theme=white)](https://gitee.com/Dell-XPS/Blog/members)
-
 ### 项目介绍
 
 -   参加工作也有一年时间了，给自己做个个人站点。也算是给自己一个奖励吧~~~🤞
