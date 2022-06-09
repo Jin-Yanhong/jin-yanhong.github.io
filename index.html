@@ -50,8 +50,6 @@
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#home">主页</a></li>
-                        <li><a href="#article">文章</a></li>
-                        <li><a href="#album">相册</a></li>
                         <li><a href="#footPrint">我的足迹</a></li>
                         <li><a href="#workshow">项目展示</a></li>
                         <li><a href="#about">声明</a></li>
@@ -82,81 +80,6 @@
                             <div class="swiper-slide" bgdata></div>
                         </div>
                         <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <div id="article">
-                    <h2>
-                        文章
-                        <small>随笔杂谈</small>
-                    </h2>
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#story" id="story-tab" role="tab" data-toggle="tab" aria-controls="story" aria-expanded="true" one-link-mark="yes">随笔</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade active in" id="story" aria-labelledby="story-tab">
-                            <h4>我的故事</h4>
-                            <iframe src="./views/article/article.html" scrolling="no" width="100%" height="640" frameborder="none"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div id="album">
-                    <h2>
-                        相册
-                        <small>记录时光</small>
-                    </h2>
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#tibet" id="tibet-tab" role="tab" data-toggle="tab" aria-controls="tibet" aria-expanded="true" one-link-mark="yes">
-                                Tibet
-                            </a>
-                        </li>
-                        <li role="presentation" class>
-                            <a href="#qinLing" id="qinLing-tab" role="tab" data-toggle="tab" aria-controls="qinLing" aria-expanded="true" one-link-mark="yes">
-                                秦岭
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade active in" id="tibet" aria-labelledby="tibet-tab">
-                            <div>
-                                <h4>2019 1001 西藏</h4>
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="thumbnail">
-                                            <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/Photos/Putala.jpg" alt="西藏行" />
-                                            <div class="caption">
-                                                <h3>西藏行</h3>
-                                                <p>2019/10</p>
-                                                <p>
-                                                    <a href="#" class="btn btn-primary" role="button">敬请期待</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="qinLing" aria-labelledby="qinLing-tab">
-                            <div>
-                                <h4>2021 0307 秦岭</h4>
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="thumbnail">
-                                            <img src="https://raw.githubusercontent.com/Jin-Yanhong/PicStore/master/Photos/sun_Set.jpg" alt="..." />
-                                            <div class="caption">
-                                                <h3>东秦岭 - 草链岭</h3>
-                                                <p>2021/03</p>
-                                                <p>
-                                                    <a href="#" class="btn btn-primary" role="button">敬请期待</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div id="footPrint">
@@ -215,7 +138,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="footerBg">
                 <div class="container" id="about">
                     <h2>
@@ -225,7 +147,7 @@
                     <br />
                     <div class="row">
                         <div class="col-sm-8 col-md-8">
-                            <p>所有博客内容，包括技术总结、摄影相册等，均系博主原创，谢绝抄袭，如需转载，请注明出处。</p>
+                            <p>如需转载，请注明出处。</p>
                             <p>
                                 &copy;
                                 <a href="mailto:820877998@qq.com">Coder-jin</a>
@@ -272,9 +194,7 @@
     <script>
         $(document).ready(function () {
             const date = new Date();
-
             timeDom = $('[showTime]').text(`${date.getFullYear()} / ${date.getMonth() + 1} / ${date.getDate()} 周${'日一二三四五六'.charAt(date.getDay())}`);
-
             // Swiper
             var swiper = new Swiper('.swiper-container', {
                 slidesPerView: 1,
