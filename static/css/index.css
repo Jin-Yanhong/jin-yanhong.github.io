@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* Swiper CSS
+************************************************************/
+#Avatar {
+	display: inline-block;
+	position: relative;
+	width: 40px;
+}
+#Avatar img {
+	position: absolute;
+	top: -23px;
+	width: 36px;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+}
+.navbar {
+	margin-bottom: 0 !important;
+}
+main[data-spy='scroll'] {
+	position: relative;
+	top: 50px;
+	height: calc(100% - 50px);
+	overflow-y: scroll;
+}
+.swiper-container {
+	width: 100%;
+	height: 600px;
+}
+.swiper-container .swiper-slide {
+	position: relative;
+	top: 0;
+	left: 0;
+	font-size: 18px;
+	width: 100%;
+	height: 100%;
+	padding-top: 50px;
+	overflow: hidden;
+}
+.swiper-container .swiper-pagination-bullet {
+	opacity: 0.7 !important;
+	background: #fff200;
+}
+.swiper-container .swiper-pagination-bullet-active {
+	background-color: #18dcff !important;
+	border-radius: 50%;
+	position: relative;
+}
+#gitdepo img {
+	width: 350px !important;
+}
+.footerBg {
+	background-color: #26292e;
+	color: #efefef;
+}
+/* second swiper
+ *************************/
